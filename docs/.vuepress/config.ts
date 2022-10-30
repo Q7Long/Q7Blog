@@ -49,10 +49,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: '《Vue》', link: '/note/vue/' },
               { text: '《React》', link: '/note/react/' },
               {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
                 text: '《Git》',
                 link: '/note/git/',
               },
@@ -81,19 +77,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: '预留模块', link: '/pages/4c778760be26d8b3/' },
+          { text: '预留模块', link: '/pages/117708e0af7f0bd9/' },
+          { text: '预留模块', link: '/pages/41f87d890d0a02af/' },
         ],
       },
       {
         text: '更多',
         link: '/more/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
+          { text: '学习', link: '/pages/Feynman Technique/' },
+          { text: '面试', link: '/pages/Question/' },
+          { text: '心情杂货', link: '/pages/feelings/' },
+          { text: '实用技巧', link: '/pages/2-minute rule/' },
           { text: '友情链接', link: '/friends/' },
         ],
       },
@@ -347,5 +343,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   extraWatchFiles: [
     '.vuepress/config.ts',
     '.vuepress/config/htmlModules.ts',
-  ]
+  ],
+  // "base":"/blog/"
 })
