@@ -180,6 +180,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           link: 'https://github.com/Q7Long',
         },
         {
+          iconClass: 'icon-gitee',
+          title: 'Gitee',
+          link: 'https://gitee.com/Q7Long',
+        },
+        {
+          iconClass: 'icon-juejin',
+          title: '掘金',
+          link: 'https://juejin.cn/user/3479275006337496/posts',
+        },
+        {
           iconClass: 'icon-erji',
           title: '听音乐',
           link: 'https://music.163.com/#/my/m/music/playlist?id=2492025851',
@@ -309,8 +319,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   {
     //     choosen: 'gitalk',
     //     options: {
-    //       clientID: 'a6e1355287947096b88b',
-    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+    //       clientID: '2454c31cd08f88aec732',
+    //       clientSecret: 'd11b1331d1dd4bd25580e8ec90c6fc61d85e9bc4',
     //       repo: 'blog-gitalk-comment', // GitHub 仓库
     //       owner: 'Q7Long', // GitHub仓库所有者
     //       admin: ['Q7Long'], // 对仓库有写权限的人
@@ -319,9 +329,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
     //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
     //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //       createIssueManually: true, //#是否自动创建isssue，自动创建需要当前登录的用户为adminuser
+    //       distractionFreeMode: false, //#是否启用快捷键(cmd|ctrl + enter) 提交评论
     //       body:
     //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-    //     },
+    //       },
     //   },
     // ],
     [
