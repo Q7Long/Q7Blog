@@ -1,5 +1,5 @@
 ---
-title: 24_Mixin extends
+title: Mixin extends
 date: 2022-12-25 18:03:28
 permalink: /pages/03b7c4/
 categories:
