@@ -79,6 +79,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: "浏览器工作原理", link: "/pages/4c778760be26d8b3/" },
           { text: "NodeJs", link: "/pages/117708e0af7f0bd9/" },
           { text: "HTTP协议", link: "/pages/41f87d890d0a02af/" },
+          { text: "计算机组成原理", link: "/pages/5973a0/" },
         ],
       },
       {
