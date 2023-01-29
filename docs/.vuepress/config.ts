@@ -52,8 +52,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: "/note/git/",
               },
               {
-                text: "TypeScript",
-                link: "/pages/51afd6/",
+                text: "《TypeScript》",
+                link: "/note/typescript/",
               },
               {
                 text: "JS设计模式总结",
