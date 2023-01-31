@@ -81,6 +81,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: "HTTP协议", link: "/pages/41f87d890d0a02af/" },
           { text: "计算机组成原理", link: "/pages/5973a0/" },
           { text: "重学前端", link: "/pages/b84cfb/" },
+          { text: "日常积累", link: "/pages/df305d/" },
         ],
       },
       {
