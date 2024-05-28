@@ -1,25 +1,14 @@
-<p align="center"><a target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="logo"></a></p>
+## 博客编辑方法
 
-## 介绍
-1. 这个主题的初衷是打造一个好用的、面向程序员的`知识管理工具`
-2. 轻松构建一个`结构化`的知识库，让你的知识海洋像一本本书一样清晰易读。
-3. 博客功能提供一种知识的`碎片化`形态，并支持个性化博客配置。
-4. `简洁高效`，以 Markdown 为中心的项目结构。内置自动化工具，以更少的配置完成更多的事。配合多维索引快速定位每个知识点。
+```js
+// 注意每一个文件夹中的文件的 permalink: /pages/9a7ee40fc232253e 都会关联 docs\.vuepress\config.ts 中  nav: 中的导航配置，如果需要更改导航信息，需要移步到 docs\.vuepress\config.ts 中配置
+// 一般来说，导航中的下拉操作都会关联到第一个文件中的 permalink 尽量不要修改第一个文件中的 permalink
+```
+
+## 如何导入图片到页面
+
+在文章中使用图片只需要使用 `public` 下任意一个文件夹路径开头的地址就可以了。比如在《深入 JavaScript 高级》笔记中，需要用到 `public` 下 `images`文件夹中 `/images/《深入 JavaScript 高级》笔记` 下的图片，就不需要使用`../xxx`切换路径到图片文件夹的目录，直接使用`/images/《深入 JavaScript 高级》笔记` 即可
 
 ## 快速上手
 
-```bash
-
-# install dependency
-npm install # or yarn install
-
-# develop
-npm run dev # or yarn dev
-```
-## ⚡️未来...
-
-
-届时，VuePress 1.x 编译慢的缺点将得到极大的改善。我将会视情况把主题升级至 VuePress v2.0 或 VitePress，也可能两个都升级。目前(2020.10.29)来看还需要一段时间才能让大家使用上基于它们的新版本，还希望大家多多支持哟，持续关注吧~
-
-
-备案号：豫ICP备2022021506号
+## ⚡️ 未来...

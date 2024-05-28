@@ -1,10 +1,9 @@
 /**
  * 提示：如您想使用JS版本的配置文件可参考：https://github.com/xugaoyi/vuepress-theme-vdoing/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
-import { resolve } from "path";
-import { defineConfig4CustomTheme, UserPlugins } from "vuepress/config";
-import { VdoingThemeConfig } from "vuepress-theme-vdoing/types";
 import dayjs from "dayjs";
+import { VdoingThemeConfig } from "vuepress-theme-vdoing/types";
+import { defineConfig4CustomTheme, UserPlugins } from "vuepress/config";
 import baiduCode from "./config/baiduCode"; // 百度统计hm码
 import htmlModules from "./config/htmlModules"; // 自定义插入的html块
 
@@ -18,7 +17,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Q7Long's blog",
+      title: "ZhangQiLong2023",
       description:
         "web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。",
     },
@@ -42,22 +41,22 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: "学习笔记",
             items: [
-              { text: "《JavaScript教程》", link: "/note/javascript/" },
-              { text: "《JavaScript高级程序设计》", link: "/note/js/" },
-              { text: "《ES6 教程》", link: "/note/es6/" },
-              { text: "《Vue》", link: "/note/vue/" },
-              { text: "《React》", link: "/note/react/" },
+              { text: "JavaScript 教程", link: "/note/javascript/" },
+              { text: "阮一峰 ES6 教程", link: "/note/es6/" },
+              { text: "深入 JavaScript 高级", link: "/note/js/" },
               {
-                text: "《Git》",
-                link: "/note/git/",
-              },
-              {
-                text: "《TypeScript》",
+                text: "深入 TypeScript 高级",
                 link: "/note/typescript/",
               },
               {
-                text: "JS设计模式总结",
+                text: "JavaScript设计模式总结",
                 link: "/pages/4643cd/",
+              },
+              { text: "Vue 入门笔记", link: "/note/vue/" },
+              { text: "深入 React 高级", link: "/note/react/" },
+              {
+                text: "Git 操作手册",
+                link: "/note/git/",
               },
             ],
           },
@@ -116,8 +115,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: "/img/logo.png", // 导航栏logo
-    repo: "https://github.com/Q7Long", // 导航栏右侧生成Github链接
+    logo: "/images/logo.png", // 导航栏logo
+    repo: "https://github.com/ZhangQiLong2023", // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: "上次更新", // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹
@@ -162,15 +161,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: "Q7Long", // 必需
+      name: "ZhangQiLong", // 必需
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar:
-        "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2fe4116e9960496f8186d630534372fd~tplv-k3u1fbpfcp-watermark.image?",
-      name: "Q7Long",
-      slogan: "@QiLongZhang",
+      avatar: "/images/avater.png",
+      name: "ZhangQiLong",
+      slogan: "",
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -180,37 +178,37 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: "icon-github",
           title: "GitHub",
-          link: "https://github.com/Q7Long",
+          link: "https://github.com/ZhangQiLong20232023",
         },
         {
           iconClass: "icon-gitee",
           title: "Gitee",
-          link: "https://gitee.com/Q7Long",
+          link: "https://gitee.com/zhangqilong2023",
         },
         {
           iconClass: "icon-juejin",
           title: "掘金",
           link: "https://juejin.cn/user/3479275006337496/posts",
         },
-        {
-          iconClass: "icon-erji",
-          title: "听音乐",
-          link: "https://music.163.com/#/my/m/music/playlist?id=2492025851",
-        },
+        // {
+        //   iconClass: "icon-erji",
+        //   title: "听音乐",
+        //   link: "https://music.163.com/#/my/m/music/playlist?id=2492025851",
+        // },
       ],
     },
 
     // 页脚信息
     footer: {
-      createYear: 2022, // 博客创建年份
-      copyrightInfo: "Q7Long | <a>备案号：豫ICP备2022021506号</a>", // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+      createYear: 2023, // 博客创建年份
+      copyrightInfo: "ZhangQiLong | <a>备案号：豫ICP备2022021506号</a>", // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: "Q7Long",
-        link: "https://github.com/Q7Long",
+        name: "ZhangQiLong",
+        link: "https://github.com/ZhangQiLong2023",
       },
     },
 
@@ -220,7 +218,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ["link", { rel: "icon", href: "/img/favicon.ico" }], //favicons，资源放在public文件夹
+    ["link", { rel: "icon", href: "/images/favicon.ico" }], //favicons，资源放在public文件夹
     [
       "meta",
       {
@@ -327,8 +325,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //       clientID: '2454c31cd08f88aec732',
     //       clientSecret: 'd11b1331d1dd4bd25580e8ec90c6fc61d85e9bc4',
     //       repo: 'blog-gitalk-comment', // GitHub 仓库
-    //       owner: 'Q7Long', // GitHub仓库所有者
-    //       admin: ['Q7Long'], // 对仓库有写权限的人
+    //       owner: 'ZhangQiLong', // GitHub仓库所有者
+    //       admin: ['ZhangQiLong'], // 对仓库有写权限的人
     //       // distractionFreeMode: true,
     //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
     //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50

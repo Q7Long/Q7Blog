@@ -31,10 +31,10 @@ const htmlModule: VdoingThemeConfig["htmlModules"] = {
       font-size: 20px;
       font-weight: bold;
       margin: 0 0 8px 0;
-    ">Q7Long项目在线体验</p>
+    ">项目在线体验</p>
     <div style="display:flex;justify-content:space-around">
     <div style="display:flex;justify-content:flex-start"> 
-    <img src="http://www.zhangqilong.cn/img/cloudMusic.png"  style="width:40px; height:40px;display:inlineBlock"  />
+    <img src="/images/music.png"  alt="云音乐App"  style="width:40px; height:40px;display:inlineBlock"  />
     <span style="height:40px;line-height:40px"><a href="http://www.zhangqilong.cn/habits/Vue_Programers/cloudMusicApp/#/home">网易云音乐App</a></span>
     </div>
     </div>
