@@ -35,29 +35,22 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: "前端文章",
-            items: [{ text: "JavaScript", link: "/pages/8143cc480faf9a11/" }],
-          },
-          {
             text: "课程学习笔记",
             items: [
-              { text: "JavaScript 教程", link: "/note/javascript/" },
               { text: "阮一峰 ES6 教程", link: "/note/es6/" },
+              { text: "Vue 零基础入门", link: "/note/vue/" },
+              {
+                text: "Git 操作技术手册",
+                link: "/note/git/",
+              },
+              { text: "JavaScript 基础教程", link: "/note/javascript/" },
               { text: "深入 JavaScript 高级", link: "/note/js/" },
               {
                 text: "深入 TypeScript 高级",
                 link: "/note/typescript/",
               },
-              {
-                text: "JavaScript设计模式总结",
-                link: "/pages/4643cd/",
-              },
-              { text: "Vue 入门笔记", link: "/note/vue/" },
-              { text: "深入 React 高级", link: "/note/react/" },
-              {
-                text: "Git 操作手册",
-                link: "/note/git/",
-              },
+              { text: "深入 React 高级教程", link: "/note/react/" },
+              
             ],
           },
         ],
@@ -76,6 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: "技术文档", link: "/pages/9a7ee40fc232253e/" },
           { text: "日常积累", link: "/pages/df305d/" },
+          {text:"前端文章",link:"/pages/a61298/"},
           { text: "浏览器工作原理", link: "/pages/4c778760be26d8b3/" },
         ],
       },
@@ -171,7 +165,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: "icon-github",
           title: "GitHub",
-          link: "https://github.com/ZhangQiLong20232023",
+          link: "https://github.com/ZhangQiLong2023",
         },
         {
           iconClass: "icon-gitee",
