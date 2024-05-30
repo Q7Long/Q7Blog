@@ -39,7 +39,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [{ text: "JavaScript", link: "/pages/8143cc480faf9a11/" }],
           },
           {
-            text: "学习笔记",
+            text: "课程学习笔记",
             items: [
               { text: "JavaScript 教程", link: "/note/javascript/" },
               { text: "阮一峰 ES6 教程", link: "/note/es6/" },
@@ -75,11 +75,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: "/technology/",
         items: [
           { text: "技术文档", link: "/pages/9a7ee40fc232253e/" },
-          { text: "浏览器工作原理", link: "/pages/4c778760be26d8b3/" },
-          { text: "NodeJs", link: "/pages/117708e0af7f0bd9/" },
-          { text: "HTTP协议", link: "/pages/41f87d890d0a02af/" },
-          { text: "重学前端", link: "/pages/b84cfb/" },
           { text: "日常积累", link: "/pages/df305d/" },
+          { text: "浏览器工作原理", link: "/pages/4c778760be26d8b3/" },
         ],
       },
       {
@@ -88,20 +85,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: "学习", link: "/pages/Feynman Technique/" },
           { text: "面试", link: "/pages/Question/" },
-          { text: "心情杂货", link: "/pages/feelings/" },
-          { text: "实用技巧", link: "/pages/2-minute rule/" },
           { text: "友情链接", link: "/friends/" },
         ],
       },
-      { text: "关于", link: "/about/" },
+      
       {
         text: "收藏",
         link: "/pages/beb6c0bd8a66cea6/",
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+        items: [
+          { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+        ],
       },
       {
         text: "索引",
@@ -112,6 +105,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: "归档", link: "/archives/" },
         ],
       },
+      { text: "关于", link: "/about/" },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: "/images/logo.png", // 导航栏logo
