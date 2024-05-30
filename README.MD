@@ -12,7 +12,7 @@
 
 ### 文章目录增添
 
-j 举例说课程学习笔记中需要新增类目,比如为深入 `JavaScript` 高级，首先就需要在 `doc` 文件夹下新建文件夹，名字随意最好带有提醒以笔记结尾用于区分。
+举例说课程学习笔记中需要新增类目,比如为深入 `JavaScript` 高级，首先就需要在 `doc` 文件夹下新建文件夹，名字随意最好带有提醒以笔记结尾用于区分。
 新增完文件夹之后，需要在 `docs\01.前端\02.课程学习笔记` 文件夹下面新建 `md` 文档，可以按照其中之一进行新建。`md` 文档配置的格式如下：
 
 - `path`：路径属性为刚才新建的文件名
@@ -20,7 +20,27 @@ j 举例说课程学习笔记中需要新增类目,比如为深入 `JavaScript` 
 - `title` ：属性则为左侧导航栏和打开之后标题
 - `permalink`：属性则是链接到了 `docs/.vuepress/config.ts` 文件下的 `themeConfig` 属性中的路径信息。比如 `JavaScript 基础笔记` 中的 `permalink` 为 `/note/javascript/` 那么在 `docs/.vuepress/config.ts` 文件下责备配置为了 `{ text: "JavaScript 教程", link: "/note/javascript/" }` 用于指向 `103_JavaScript 基础笔记` 文件夹
 
-### 文章目录增添
+```javascript
+
+pageComponent:
+  name: Catalogue
+  data:
+    path: 103_JavaScript 基础笔记
+    imgUrl: /images/JavaScript.png
+    description: 本章内容为博主在原教程基础上添加学习笔记，教程版权归原作者所有。来源：<a href='https://wangdoc.com/javascript/' target='_blank'>JavaScript教程</a>
+title: JavaScript 基础
+date: 2022-06-24 13:34:19
+permalink: /note/javascript/
+article: false
+comment: false
+editLink: false
+author:
+  name: ZhangQiLong
+  link: https://github.com/ZhangQiLong
+
+```
+
+### 文章内容配置
 
 `md` 文档中需要进行配置信息，用于指定该文章的一些内容，比如作者信息、创建日期、显示优先级、是否为原创文章、文章分类、文章标签等信息，如果导入的 `md` 文档中没有该配置，进行保存之后就会自动生成该配置信息
 
