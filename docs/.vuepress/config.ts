@@ -122,7 +122,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '',
     //   '',
     //   ''
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    // ], // 整个页面的 body 背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
@@ -134,7 +134,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // updateBar: { // 最近更新栏
     //   showToArticle: true, // 显示到文章页底部，默认true
-    //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+    //   moreArticle: '/archives' // 更多文章跳转的页面，默认'/archives' 归档页面
     // },
     // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
